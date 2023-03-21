@@ -1,5 +1,5 @@
 # Final Projet Mobile Programming Lanjut
-# Aplikasi Mobile Untuk Menghitung Indeks Massa Tubuh (IMT)
+<h2> Aplikasi Mobile Untuk Menghitung Indeks Massa Tubuh (IMT)</h2>
 
 <h4>Aditio Hidayatulloh</h4>
 <h4>2113201044</h4>
