@@ -56,9 +56,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     label: 'thn',
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: const [
-                        IMTButton(icon: Icons.remove),
-                        IMTButton(icon: Icons.add),
+                      children: [
+                        IMTButton(
+                          icon: Icons.remove,
+                          onPressed: () {
+                            setState(() {
+                              age--;
+                            });
+                          },
+                        ),
+                        IMTButton(
+                          icon: Icons.add,
+                          onPressed: () {
+                            setState(() {
+                              age++;
+                            });
+                          },
+                        ),
                       ],
                     ),
                   ),
@@ -70,9 +84,23 @@ class _HomeScreenState extends State<HomeScreen> {
                     label: 'kg',
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: const [
-                        IMTButton(icon: Icons.remove),
-                        IMTButton(icon: Icons.add),
+                      children: [
+                        IMTButton(
+                          icon: Icons.remove,
+                          onPressed: () {
+                            setState(() {
+                              weight--;
+                            });
+                          },
+                        ),
+                        IMTButton(
+                          icon: Icons.add,
+                          onPressed: () {
+                            setState(() {
+                              weight++;
+                            });
+                          },
+                        ),
                       ],
                     ),
                   ),
@@ -91,6 +119,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   min: 100.0,
                   max: 250.0,
                   value: height.toDouble(),
+                  activeColor: Colors.white,
+                  inactiveColor: Colors.black45,
                   onChanged: (newValue) {
                     setState(() {
                       height = newValue.toInt();

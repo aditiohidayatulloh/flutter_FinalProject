@@ -5,14 +5,16 @@ class IMTButton extends StatelessWidget {
   const IMTButton({
     super.key,
     required this.icon,
+    required this.onPressed,
   });
 
   final IconData icon;
+  final Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
-      onPressed: () {},
+      onPressed: onPressed,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(8.0.sp),
       ),
