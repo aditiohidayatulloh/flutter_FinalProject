@@ -11,6 +11,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int age = 20;
+  int weight = 62;
+  int height = 170;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -40,13 +44,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 textAlign: TextAlign.center,
               ),
-              SizedBox(height: 23.0.h),
+              SizedBox(height: 25.0.h),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   IMTCard(
+                    width: 156,
+                    height: 215,
                     title: 'UMUR',
-                    value: '20',
+                    value: age.toString(),
+                    label: 'thn',
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: const [
@@ -56,8 +63,11 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   IMTCard(
+                    width: 156,
+                    height: 215,
                     title: 'BERAT BADAN',
-                    value: '62',
+                    value: weight.toString(),
+                    label: 'kg',
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: const [
@@ -67,6 +77,26 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ],
+              ),
+              SizedBox(
+                height: 32.0.h,
+              ),
+              IMTCard(
+                width: double.infinity,
+                height: 215,
+                title: 'TINNGI BADAN',
+                value: height.toString(),
+                label: 'cm',
+                child: Slider(
+                  min: 100.0,
+                  max: 250.0,
+                  value: height.toDouble(),
+                  onChanged: (newValue) {
+                    setState(() {
+                      height = newValue.toInt();
+                    });
+                  },
+                ),
               ),
             ],
           ),
