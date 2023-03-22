@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       builder: ((context, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Flutter Kalkulator IMT',
+          title: 'Kalkulator IMT',
           theme: ThemeData(
-            primaryColor: const Color(0xFF0D2B7A),
+            primaryColor: const Color.fromRGBO(4, 116, 237, 1),
           ),
           home: const HomeScreen(),
         );

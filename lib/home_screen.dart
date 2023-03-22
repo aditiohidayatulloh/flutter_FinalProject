@@ -20,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(
       child: Scaffold(
         drawer: const Drawer(),
+        backgroundColor: const Color.fromRGBO(191, 231, 249, 1),
         appBar: AppBar(
           backgroundColor: Theme.of(context).primaryColor,
           title: const Text('Kalkulator IMT'),
@@ -39,9 +40,9 @@ class _HomeScreenState extends State<HomeScreen> {
               Text(
                 'Periksa Indeks Massa Tubuhmu Untuk Menjaga Kebugaran Tubuhmu',
                 style: TextStyle(
-                  fontSize: 18.0.sp,
-                  fontWeight: FontWeight.w400,
-                ),
+                    fontSize: 18.0.sp,
+                    fontWeight: FontWeight.bold,
+                    color: const Color.fromRGBO(4, 116, 237, 1)),
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 25.0.h),
@@ -50,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   IMTCard(
                     width: 156,
-                    height: 215,
+                    height: 200,
                     title: 'UMUR',
                     value: age.toString(),
                     label: 'thn',
@@ -78,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   IMTCard(
                     width: 156,
-                    height: 215,
+                    height: 200,
                     title: 'BERAT BADAN',
                     value: weight.toString(),
                     label: 'kg',
@@ -111,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               IMTCard(
                 width: double.infinity,
-                height: 215,
+                height: 200,
                 title: 'TINNGI BADAN',
                 value: height.toString(),
                 label: 'cm',
@@ -120,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   max: 250.0,
                   value: height.toDouble(),
                   activeColor: Colors.white,
-                  inactiveColor: Colors.black45,
+                  inactiveColor: const Color.fromRGBO(191, 231, 249, 1),
                   onChanged: (newValue) {
                     setState(() {
                       height = newValue.toInt();
@@ -128,6 +129,35 @@ class _HomeScreenState extends State<HomeScreen> {
                   },
                 ),
               ),
+              SizedBox(
+                height: 40.0.h,
+              ),
+              Text(
+                'Tekan tombol di bawah untuk menghitung hasil Indeks Massa Tubuh',
+                style: TextStyle(
+                  fontSize: 18.0.sp,
+                  fontWeight: FontWeight.w500,
+                  color: const Color.fromRGBO(4, 116, 237, 1),
+                ),
+                textAlign: TextAlign.center,
+              ),
+              const Spacer(),
+              SizedBox(
+                width: double.infinity,
+                height: 50.h,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Theme.of(context).primaryColor),
+                  child: Text(
+                    'HITUNG',
+                    style: TextStyle(
+                      fontSize: 18.0.sp,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),
