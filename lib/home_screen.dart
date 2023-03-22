@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'imt_button.dart';
+import 'imt_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -39,29 +41,32 @@ class _HomeScreenState extends State<HomeScreen> {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 23.0.h),
-              Container(
-                width: 156.0.w,
-                height: 215.0.h,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.0.sp),
-                  color: Theme.of(context).primaryColor,
-                ),
-                child: Column(children: [
-                  Text(
-                    'UMUR',
-                    style: TextStyle(
-                        fontSize: 18.0.sp,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IMTCard(
+                    title: 'UMUR',
+                    value: '20',
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: const [
+                        IMTButton(icon: Icons.remove),
+                        IMTButton(icon: Icons.add),
+                      ],
+                    ),
                   ),
-                  Text(
-                    '20',
-                    style: TextStyle(
-                        fontSize: 64.0.sp,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
+                  IMTCard(
+                    title: 'BERAT BADAN',
+                    value: '62',
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: const [
+                        IMTButton(icon: Icons.remove),
+                        IMTButton(icon: Icons.add),
+                      ],
+                    ),
                   ),
-                ]),
+                ],
               ),
             ],
           ),

@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Flutter Kalkulator IMT',
           theme: ThemeData(
-            primaryColor: Color(0xFF0D2B7A),
+            primaryColor: const Color(0xFF0D2B7A),
           ),
-          home: HomeScreen(),
+          home: const HomeScreen(),
         );
       }),
     );
