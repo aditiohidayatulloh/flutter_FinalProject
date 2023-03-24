@@ -1,7 +1,9 @@
+import 'package:final_project/screen/result_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'imt_button.dart';
-import 'imt_card.dart';
+import '../widget/custom_button.dart';
+import '../widget/imt_button.dart';
+import '../widget/imt_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -142,21 +144,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 textAlign: TextAlign.center,
               ),
               const Spacer(),
-              SizedBox(
-                width: double.infinity,
-                height: 50.h,
-                child: ElevatedButton(
-                  onPressed: () {},
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: Theme.of(context).primaryColor),
-                  child: Text(
-                    'HITUNG',
-                    style: TextStyle(
-                      fontSize: 18.0.sp,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
+              CustomButton(
+                title: 'HITUNG',
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const ResultScreen()),
+                  );
+                },
               )
             ],
           ),
