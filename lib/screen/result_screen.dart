@@ -4,7 +4,17 @@ import '../widget/custom_button.dart';
 import '../widget/result_text.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({super.key});
+  const ResultScreen({
+    super.key,
+    required this.imtResult,
+    required this.resultText,
+    // ignore: non_constant_identifier_names
+    required this.interpretation,
+  });
+
+  final String imtResult;
+  final String resultText;
+  final String interpretation;
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +32,7 @@ class ResultScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'HASIL PERHITUNGAN',
+                    'Hasil Perhitungan',
                     style: TextStyle(
                         fontSize: 30.0.sp,
                         fontWeight: FontWeight.bold,
@@ -38,32 +48,33 @@ class ResultScreen extends StatelessWidget {
                         color: Theme.of(context).primaryColor,
                         borderRadius: BorderRadius.circular(20.sp)),
                     child: Padding(
-                      padding: const EdgeInsets.all(28.0),
+                      padding: const EdgeInsets.all(25.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: const [
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
                           ResultText(
-                            title: 'NORMAL',
+                            title: resultText,
                             fontSize: 36,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
+                          const Spacer(),
                           ResultText(
-                            title: '19.5',
+                            title: imtResult,
                             fontSize: 96,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
-                          ResultText(
-                            title: 'KETERANGAN',
-                            fontSize: 18,
+                          const Spacer(),
+                          const ResultText(
+                            title: 'KETERANGAN :',
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),
                           ResultText(
-                            title:
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac purus scelerisque, rhoncus enim nec, aliquam sapien. Etiam venenatis volutpat odio, a rutrum erat iaculis sit amet. Aenean iaculis lobortis nisi, non congue ligula tincidunt a. Ut iaculis mauris eros, ut laoreet dolor scelerisque ac. In quis orci ut justo semper pretium mattis sed sem. Nullam maximus vel erat id consectetur. ',
-                            fontSize: 16,
+                            title: interpretation,
+                            fontSize: 18,
                             fontWeight: FontWeight.w400,
                             color: Colors.white,
                           ),
@@ -72,8 +83,9 @@ class ResultScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 70.0.sp,
+                    height: 50.0.sp,
                   ),
+                  // Spacer(),
                   CustomButton(
                     title: 'KEMBALI',
                     onPressed: () {

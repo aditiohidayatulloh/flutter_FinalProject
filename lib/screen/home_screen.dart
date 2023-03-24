@@ -1,3 +1,4 @@
+import 'package:final_project/imt_calculate.dart';
 import 'package:final_project/screen/result_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -150,7 +151,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const ResultScreen()),
+                      builder: (context) {
+                        IMTCalculator imtCalculator = IMTCalculator(
+                          height: height,
+                          weight: weight,
+                        );
+                        return ResultScreen(
+                            imtResult: imtCalculator.calculateIMT(),
+                            resultText: imtCalculator.getResult(),
+                            interpretation: imtCalculator.getInterpretation());
+                      },
+                    ),
                   );
                 },
               )

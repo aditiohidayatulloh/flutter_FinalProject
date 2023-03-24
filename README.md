@@ -7,17 +7,20 @@
 
 # Indeks Massa Tubuh
 <p>Indeks massa tubuh (body mass indeks) atau disingkat BMI adalah pengukuran yang digunakan untuk menentukan golongan berat badan sehat dan tidak sehat.</p>
-<br>
+
 <p>Pada beberapa kasus, BMI bisa menjadi alat skrining untuk melihat risiko kesehatan. WHO menyebutkan bahwa hasil perhitungan BMI yang tinggi, menandakan tingginya juga risiko untuk beberapa penyakit.</p>
-<br>
+
 <p>Beberapa masalah kesehatan akibat obesitas, berhubungan dengan BMI yang tinggi, di antaranya kematian dini, penyakit kardiovaskular, tekanan darah tinggi, osteoartritis, beberapa jenis kanker, dan diabetes.</p>
 
 # Rumus IMT Untuk Orang Dewasa
 <img src ="/images/rumus_imt.jpeg">
 <ul>
-    <li>Di bawah 18,5 = Berat badan kurang.</li>
-    <li>18,5 – 22,9 = Berat badan normal.</li>
-    <li>23 – 29,9 = Berat badan berlebih (kecenderungan obesitas).</li>
-    <li>30 ke atas = obesitas.</li>
+    <li> < 17,0  = Kekurangan berat badan tingkat berat</li>
+    <li> 17,0 - 18,4  = Kekurangan berat badan tingkat ringan</li>
+    <li>18,5 – 25,0 = Berat badan normal.</li>
+    <li>25,1 – 27,0 = Kelebihan berat badan tingkat ringan (kecenderungan obesitas).</li>
+    <li> > 27,0 = Kelebihan berat badan tingkat berat (obesitas).</li>
 <ul>
+
+<p>Sumber : https://p2ptm.kemkes.go.id/infographicp2ptm/obesitas/tabel-batas-ambang-indeks-massa-tubuh-imt</p>
 
