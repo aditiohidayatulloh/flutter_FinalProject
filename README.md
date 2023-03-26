@@ -21,11 +21,7 @@
     <li>25,1 – 27,0 = Kelebihan berat badan tingkat ringan (OVERWEIGHT).</li>
     <li> > 27,0 = Kelebihan berat badan tingkat berat (OBESITAS).</li>
 <ul>
-<br>
 
 <p>Sumber : https://p2ptm.kemkes.go.id/infographicp2ptm/obesitas/tabel-batas-ambang-indeks-massa-tubuh-imt</p>
 
 
-# Hasil
-<img src ="/images/home_screen.jpg">
-<img src ="/images/result_screen.jpg">
