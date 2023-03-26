@@ -10,7 +10,7 @@
 
 <p>Pada beberapa kasus, IMT bisa menjadi alat skrining untuk melihat risiko kesehatan. WHO menyebutkan bahwa hasil perhitungan IMT yang tinggi, menandakan tingginya juga risiko untuk beberapa penyakit.</p>
 
-<p>Beberapa masalah kesehatan akibat obesitas, berhubungan dengan IMT yang tinggi, di antaranya kematian dini, penyakit kardiovaskular, tekanan darah tinggi, osteoartritis, beberapa jenis kanker, dan diabetes.</p>
+<p>Beberapa masalah kesehatan akibat obesitas, berhubungan dengan IMT yang tinggi, di seperti penyakit jantung, stroke, diabetes, dan beberapa jenis kanker.</p>
 
 # Rumus IMT Untuk Orang Dewasa
 <img src ="/images/rumus_imt.jpeg">
