@@ -6,21 +6,22 @@
 <h4>Universitas Sangga Buana YPKP Bandung</h4>
 
 # Indeks Massa Tubuh
-<p>Indeks massa tubuh (body mass indeks) atau disingkat BMI adalah pengukuran yang digunakan untuk menentukan golongan berat badan sehat dan tidak sehat.</p>
+<p>Indeks massa tubuh atau disingkat IMT adalah pengukuran yang digunakan untuk menentukan golongan berat badan sehat dan tidak sehat.</p>
 
-<p>Pada beberapa kasus, BMI bisa menjadi alat skrining untuk melihat risiko kesehatan. WHO menyebutkan bahwa hasil perhitungan BMI yang tinggi, menandakan tingginya juga risiko untuk beberapa penyakit.</p>
+<p>Pada beberapa kasus, IMT bisa menjadi alat skrining untuk melihat risiko kesehatan. WHO menyebutkan bahwa hasil perhitungan IMT yang tinggi, menandakan tingginya juga risiko untuk beberapa penyakit.</p>
 
-<p>Beberapa masalah kesehatan akibat obesitas, berhubungan dengan BMI yang tinggi, di antaranya kematian dini, penyakit kardiovaskular, tekanan darah tinggi, osteoartritis, beberapa jenis kanker, dan diabetes.</p>
+<p>Beberapa masalah kesehatan akibat obesitas, berhubungan dengan IMT yang tinggi, di antaranya kematian dini, penyakit kardiovaskular, tekanan darah tinggi, osteoartritis, beberapa jenis kanker, dan diabetes.</p>
 
 # Rumus IMT Untuk Orang Dewasa
 <img src ="/images/rumus_imt.jpeg">
 <ul>
-    <li> < 17,0  = Kekurangan berat badan tingkat berat</li>
-    <li> 17,0 - 18,4  = Kekurangan berat badan tingkat ringan</li>
+    <li> < 17,0  = Kekurangan berat badan tingkat berat (UNDERWEIGHT)</li>
+    <li> 17,0 - 18,4  = Kekurangan berat badan tingkat ringan(KURUS)</li>
     <li>18,5 – 25,0 = Berat badan normal.</li>
-    <li>25,1 – 27,0 = Kelebihan berat badan tingkat ringan (kecenderungan obesitas).</li>
-    <li> > 27,0 = Kelebihan berat badan tingkat berat (obesitas).</li>
+    <li>25,1 – 27,0 = Kelebihan berat badan tingkat ringan (OVERWEIGHT).</li>
+    <li> > 27,0 = Kelebihan berat badan tingkat berat (OBESITAS).</li>
 <ul>
+<br>
 
 <p>Sumber : https://p2ptm.kemkes.go.id/infographicp2ptm/obesitas/tabel-batas-ambang-indeks-massa-tubuh-imt</p>
 
